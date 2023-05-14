@@ -1,0 +1,93 @@
+/*UTF-8は冒頭に書かなければいけない*/
+@charset "UTF-8"; 
+@media (max-width: 768px) {
+    /* 768px以下の画面幅でのスタイル */
+    }
+    
+@media (min-width: 768px) {
+    /* 768px以上の画面幅でのスタイル */
+    }
+    
+@media (min-width: 992px) {
+    /* 992px以上の画面幅でのスタイル */
+    }
+    
+@media (min-width: 1200px) {
+    /* 1200px以上の画面幅でのスタイル */
+    }
+
+body{
+    font-family: "Hiragino Kaku Gothic",Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    border-top: 10px solid #79a1b1;
+    }
+.logo{
+    /* display:inline-blockを入れると偏るのはなぜ？*/
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    }
+.header {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: aquamarine;
+    margin-bottom: 10px;
+}
+
+.header ul{
+    display: flex;
+    float: left;
+    margin-block: 10px;
+}
+.header ul li{
+    width: 200px;
+    text-align: center;
+    margin-bottom: 10px;
+    border-right: 1px solid #ddd;
+}
+.header ul li:first-child{
+    border-left: 1px solid #ddd;
+}
+
+
+    .header_img {
+    position: relative;
+    text-align: center;
+    margin:  0 auto;
+    margin-top: 20px;
+    width: 1200px;
+    height: 800px;
+    overflow: hidden;
+    }
+    
+    .header_img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    }
+    
+    .header_img img:first-child {
+    opacity: 1;
+    }
+    
+
+/*36項目にあったが文字が反映されなくなった。下部に持ってくることによって解決理由は不明*/
+    .header ul{
+        display: flex;
+        float: left;
+        margin-block: 10px;
+    }
+    .header ul li{
+        width: 200px;
+        text-align: center;
+        margin-bottom: 10px;
+        border-right: 1px solid #ddd;
+    }
+    .header ul li:first-child{
+        border-left: 1px solid #ddd;
+    }
+
